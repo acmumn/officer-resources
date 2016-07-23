@@ -1,5 +1,6 @@
 From: `-----003@umn.edu`
-To: `acm@cs.umn.edu1
+
+To: `acm@cs.umn.edu1`
 
 Hello,
 
@@ -11,6 +12,7 @@ Thank you very much!
 - - - - -
 
 From: `-----292@umn.edu`
+
 To: `-----003@umn.edu`, `acm@cs.umn.edu`
 
 Hi -----!
