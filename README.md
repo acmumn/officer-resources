@@ -5,7 +5,7 @@ If civilization was obliterated by a meteor, would the remnants of
 humanity be able to successfully run ACM UMN? The goal of this repository
 is to make that answer 'yes'.
 
-**[Click here to go to the ACM Wiki](https://github.com/acmumn/officer-resources/wiki)**
+**[Click here to go to the ACM Wiki!](https://github.com/acmumn/officer-resources/wiki)**
 
 **Looking for information on how to do your job?** Consult the wiki,
 which (hopefully) has everything you need to know to be a functioning
