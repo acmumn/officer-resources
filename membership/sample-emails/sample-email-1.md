@@ -1,6 +1,6 @@
 From: `-----003@umn.edu`
 
-To: `acm@cs.umn.edu1`
+To: `acm@cs.umn.edu`
 
 Hello,
 
