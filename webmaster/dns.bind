@@ -1,0 +1,17 @@
+; Web
+@               IN    A        160.94.179.130
+www             IN    CNAME    acm.umn.edu.
+
+; Other services
+internal        IN    A        160.94.179.150
+authd           IN    A        160.94.179.151
+snacks          IN    A        160.94.179.152
+
+; ACM Machines
+medusa          IN    A        160.94.179.130
+dragon          IN    A        160.94.179.162
+kobold          IN    A        160.94.179.163
+
+; Member Machines
+chimera         IN    A        160.94.179.164
+bellerophon     IN    A        160.94.179.165
