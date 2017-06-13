@@ -15,3 +15,18 @@ officer of the ACM!
 Remember, the goal is that someone could, without any outside guidance,
 read the wiki reference for an officer position and know how to do their
 job. Write your documentation accordingly.
+
+```
+ _________________________________________ 
+( Keep knowledge in plain text.           )
+(                                         )
+( Plain text won't become obsolete. It    )
+( helps leverage your work and simplifies )
+( debugging and testing.                  )
+ ----------------------------------------- 
+        o   ^__^
+         o  (oo)\_______
+            (__)\       )\/\
+                ||----w |
+                ||     ||
+```
