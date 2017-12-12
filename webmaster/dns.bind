@@ -1,17 +1,31 @@
-; Web
+$ORIGIN acm.umn.edu.
+
+acm.umn.edu.    IN    SOA      ns-auth-1.umn.edu. acm.umn.edu. (20170504 86400 43200 86400 3600)
+
+beholder        IN    A        160.94.179.129
+
+; ACM "logical"
 @               IN    A        160.94.179.130
 www             IN    CNAME    acm.umn.edu.
+snacks          IN    A        160.94.179.131
+minnehack       IN    A        160.94.179.132
+files           IN    A        160.94.179.133
+games           IN    A        160.94.179.134
 
-; Other services
-internal        IN    A        160.94.179.150
-authd           IN    A        160.94.179.151
-snacks          IN    A        160.94.179.152
+; ACM "physical"
+argo            IN    A        160.94.179.148
+medusa          IN    A        160.94.179.149
 
-; ACM Machines
-medusa          IN    A        160.94.179.130
-dragon          IN    A        160.94.179.162
-kobold          IN    A        160.94.179.163
+; VMs
+vm0             IN    A        160.94.179.164
+vm1             IN    A        160.94.179.165
+vm2             IN    A        160.94.179.166
+vm3             IN    A        160.94.179.167
+vm4             IN    A        160.94.179.168
+vm5             IN    A        160.94.179.169
+vm6             IN    A        160.94.179.170
+vm7             IN    A        160.94.179.171
 
 ; Member Machines
-chimera         IN    A        160.94.179.164
-bellerophon     IN    A        160.94.179.165
+josh            IN    A        160.94.179.189
+nbox            IN    A        160.94.179.190
