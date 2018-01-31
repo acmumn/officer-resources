@@ -8,6 +8,8 @@ Basic Commands:
  - cat, less, man
  - grep, find
 
+[Filesystem Hierarchy Standard](https://en.wikipedia.org/wiki/Filesystem_Hierarchy_Standard)
+
 SSH:
 
  - Basic usage
@@ -45,35 +47,36 @@ Basic Vim:
 
 Other Helpful Tools:
 
- - fd
- - ripgrep
- - tealdeer
- - tokei
+ - [autojump](https://github.com/wting/autojump)
+ - [fd](https://github.com/sharkdp/fd)
+ - [ripgrep](https://github.com/BurntSushi/ripgrep)
+ - [tealdeer](https://github.com/dbrgn/tealdeer)
+ - [tokei](https://github.com/Aaronepower/tokei)
 
 ## Lecture 4 - Git
 
-Git Flow
-
-Internals of Git?
-
-TODO Plan this better
+ - git log
+ - git log --graph --oneline --all
+ - rebasing vs. merging
+ - push/pull
+ - branches + Git Flow
 
 ## Lecture 5 - Customizing Zsh and Vim
 
 Customizing ZSH:
 
- - oh-my-zsh
+ - [oh-my-zsh](https://ohmyz.sh)
  - themes
  - aliases
-   - trash as rm
-   - exa as ls
+   - [trash](https://github.com/andreafrancia/trash-cli) as rm
+   - [exa](https://the.exa.website/) as ls
    - ll as ls -l
 
 Customizing Vim:
 
- - vim-plug
- - CtrlP
- - Airline
- - vim-startify
- - vim-colorschemes
- - NERDTree
+ - [vim-plug](https://github.com/junegunn/vim-plug)
+ - [CtrlP](https://github.com/kien/ctrlp.vim)
+ - [Airline](https://github.com/vim-airline/vim-airline)
+ - [vim-startify](https://github.com/mhinz/vim-startify)
+ - [vim-colorschemes](https://github.com/flazz/vim-colorschemes), [vimcolors](http://vimcolors.com/)
+ - [NERDTree](https://github.com/scrooloose/nerdtree)
