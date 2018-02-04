@@ -1,18 +1,27 @@
 # ACM Unix Class Curriculum
 
-## Lecture 1 - The Filesystem
+## Lesson 1 - The Filesystem
+
+Setting Up Lesson
+ - SSHing to CSELabs
+ - Cloning lesson repo
 
 Basic Commands:
 
- - cd, ls, pwd
+ - cd, ls, mkdir, pwd, [Filesystem Hierarchy Standard](https://en.wikipedia.org/wiki/Filesystem_Hierarchy_Standard)
+   - `/bin`
+   - `/etc`
+   - `/home`
+   - `/lib`
+   - `/sbin`
+   - `/usr/bin`
+   - `/usr/lib`
+   - `/usr/sbin`
  - cat, less, man
  - grep, find
 
-[Filesystem Hierarchy Standard](https://en.wikipedia.org/wiki/Filesystem_Hierarchy_Standard)
-
 SSH:
 
- - Basic usage
  - Keys
  - GitHub Keys
 
@@ -23,7 +32,7 @@ CLI Development:
  - javac + java
  - python
 
-## Lecture 2 - Pipes and Filters
+## Lesson 2 - Pipes and Filters
 
 Basic Commands:
 
@@ -37,7 +46,7 @@ Bash Features:
 
  - Variables
 
-## Lecture 3 - Vim, More Tools
+## Lesson 3 - Vim, More Tools
 
 Basic Vim:
 
@@ -53,7 +62,7 @@ Other Helpful Tools:
  - [tealdeer](https://github.com/dbrgn/tealdeer)
  - [tokei](https://github.com/Aaronepower/tokei)
 
-## Lecture 4 - Git
+## Lesson 4 - Git
 
  - git log
  - git log --graph --oneline --all
@@ -61,7 +70,7 @@ Other Helpful Tools:
  - push/pull
  - branches + Git Flow
 
-## Lecture 5 - Customizing Zsh and Vim
+## Lesson 5 - Customizing Zsh and Vim
 
 Customizing ZSH:
 
