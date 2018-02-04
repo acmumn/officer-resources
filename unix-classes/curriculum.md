@@ -8,7 +8,8 @@ Setting Up Lesson
 
 Basic Commands:
 
- - cd, ls, mkdir, pwd, [Filesystem Hierarchy Standard](https://en.wikipedia.org/wiki/Filesystem_Hierarchy_Standard)
+ - cd, ls, mkdir
+ - pwd, [Filesystem Hierarchy Standard](https://en.wikipedia.org/wiki/Filesystem_Hierarchy_Standard)
    - `/bin`
    - `/etc`
    - `/home`
