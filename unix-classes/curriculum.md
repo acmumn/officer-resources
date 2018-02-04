@@ -72,7 +72,15 @@ Other Helpful Tools:
  - push/pull
  - branches + Git Flow
 
-## Lesson 5 - Customizing Zsh and Vim
+## Lesson 5 - Regexes
+
+ - Alternation
+ - Repetition
+ - `^` and `$`
+ - Escapes
+ - Capture Groups
+
+## Lesson 6 - Customizing Zsh and Vim
 
 Customizing ZSH:
 
