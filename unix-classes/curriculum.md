@@ -15,6 +15,7 @@ Basic Commands:
    - `/home`
    - `/lib`
    - `/sbin`
+   - `/tmp`
    - `/usr/bin`
    - `/usr/lib`
    - `/usr/sbin`
