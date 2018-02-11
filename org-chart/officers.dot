@@ -1,0 +1,53 @@
+digraph officerPositions {
+	node[shape = "box"];
+	president [label = <<b>President</b><br/>Ari Bible>];
+
+	// Ari lording their power over us.
+	president -> vicePresident, treasurer, sysadmin, communityAmbassador;
+
+	subgraph cluster_financial {
+		treasurer [label = <<b>Treasurer</b><br/>Helen Larson>];
+		ace [label = "Ace Oubaha"];
+
+		treasurer -> ace;
+
+		color = "lightgrey";
+		label = "Financial Committee";
+		style = "filled";
+	}
+
+	subgraph cluster_administrative {
+		vicePresident [label = <<b>Vice President</b><br/>Alison Gould>];
+		secretary [label = "Noah Wrolson"];
+		mike [label = "Mike McPherson"];
+
+		vicePresident -> secretary, ace, mike;
+
+		color = lightgrey;
+		label = "Administrative Committee";
+		style = filled;
+	}
+
+	subgraph cluster_public_relations {
+		communityAmbassador [label = <<b>Community<br/>Ambassador</b><br/>Isai Ortiz>];
+		membership [label = "Josh Folkerds"];
+
+		communityAmbassador -> membership;
+
+		color = lightgrey;
+		label = "Public Relations Committee";
+		style = filled;
+	}
+
+	subgraph cluster_systems {
+		sysadmin [label = <<b>Systems<br/>Administrator</b><br/>Nathan Ringo>];
+		webmaster [label = "Michael Zhang"];
+		louis [label = "Louis Goessling"];
+
+		sysadmin -> webmaster, louis;
+
+		color = lightgrey;
+		label = "Systems Committee";
+		style = filled;
+	}
+}
