@@ -11,7 +11,7 @@
 		<ellipse fill="#000000" cx="53" cy="22" rx="6" ry="4"/>
 		<ellipse fill="#000000" cx="50" cy="25" rx="8" ry="6"/>
 	</g>
-	<g id="burger" transform="translate(150, 50)">
+	<g id="burger" transform="translate(150, 65)">
 		<!-- Top Bun, Outline -->
 		<ellipse fill="#000000" cx="60" cy="25" rx="20" ry="7.5"/>
 		<rect fill="#000000" x="40" y="25" width="40" height="7.5"/>
