@@ -1,0 +1,32 @@
+digraph events {
+	compound = true;
+
+	node[shape = "box"];
+	acmumn [label = <<b>ACM UMN</b>>];
+
+	acmw [label = <<b>ACM-W</b>>];
+	corporate [label = <<b>Corporate<br/>Sponsors</b>>];
+	dept [label = <<b>Department<br/>of Computer Science<br/>and Engineering</b>>];
+	mlh [label = <<b>MLH</b>>];
+	national [label = <<b>ACM<br/>National</b>>];
+	otherGroups [label = <<b>Other Student<br/>Groups</b>>];
+	otherEvents [label = "Other Student\nGroups' Events", style = "dashed"];
+	acmw, corporate, national -> sdc;
+	corporate -> minnehack;
+	corporate, dept, otherGroups -> thinkTalks;
+	mlh -> minnehack;
+	otherGroups -> lanParty;
+	otherGroups, resources -> otherEvents;
+
+	lanParty [label = "LAN Party"];
+	minnehack [label = "MinneHack"];
+	sdc [label = "SDC"];
+	thinkTalks [label = "ThinkTalks"];
+	acmumn -> sdc, minnehack, thinkTalks, lanParty, room;
+
+	room [label = "Community Room"];
+	library [label = "Library"];
+	resources [label = "{<f0> Desktops|<f1> Hardware Lab|<f2> VR Lab|<f3> Servers}", shape = "record"];
+	store [label = "Store"];
+	room -> library, resources, store;
+}
