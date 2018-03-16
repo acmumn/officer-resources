@@ -14,15 +14,21 @@ digraph events {
 	acmw, corporate, national -> sdc;
 	corporate -> minnehack;
 	corporate, dept, otherGroups -> thinkTalks;
+	dept -> donuts;
 	mlh -> minnehack;
 	otherGroups -> lanParty;
 	otherGroups, resources -> otherEvents;
 
-	lanParty [label = "LAN Party"];
-	minnehack [label = "MinneHack"];
-	sdc [label = "SDC"];
-	thinkTalks [label = "ThinkTalks"];
-	acmumn -> sdc, minnehack, thinkTalks, lanParty, room;
+	// Events have a bold outline.
+	donuts [label = "Donuts with the\nDepartment", style="bold"];
+	lanParty [label = "LAN Party", style="bold"];
+	minnehack [label = "MinneHack", style="bold"];
+	resumes [label = "Resume Review", style="bold"];
+	sdc [label = "SDC", style="bold"];
+	studySession [label = "Finals Study\nSession", style="bold"];
+	thinkTalks [label = "ThinkTalks", style="bold"];
+	acmumn -> donuts, lanParty, minnehack, resumes, sdc, studySession, thinkTalks;
+	acmumn -> room;
 
 	room [label = "Community Room"];
 	library [label = "Library"];

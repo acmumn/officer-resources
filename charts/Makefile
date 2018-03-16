@@ -1,4 +1,4 @@
-all: events.svg officers.png officers.svg
+all: events.png events.svg officers.png officers.svg
 clean:
 	test ! -f events.png || rm events.png
 	test ! -f officers.png || rm officers.png
