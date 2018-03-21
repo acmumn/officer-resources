@@ -6,7 +6,7 @@ digraph officerPositions {
 	president -> vicePresident, treasurer, sysadmin, communityAmbassador;
 
 	subgraph cluster_financial {
-		treasurer [label = <<b>Treasurer</b><br/>Helen Larson>];
+		treasurer [label = <<b>Treasurer</b><br/><br/>Helen Larson>];
 		ace [label = "Ace Oubaha"];
 
 		treasurer -> ace;
@@ -17,7 +17,7 @@ digraph officerPositions {
 	}
 
 	subgraph cluster_administrative {
-		vicePresident [label = <<b>Vice President</b><br/>Alison Gould>];
+		vicePresident [label = <<b>Vice President</b><br/><br/>Alison Gould>];
 		secretary [label = "Noah Wrolson"];
 		mike [label = "Mike McPherson"];
 
@@ -32,7 +32,7 @@ digraph officerPositions {
 		communityAmbassador [label = <<b>Community<br/>Ambassador</b><br/>Isai Ortiz>];
 		membership [label = "Josh Folkerds"];
 
-		communityAmbassador -> membership;
+		communityAmbassador -> ace, membership;
 
 		color = lightgrey;
 		label = "Public Relations Committee";
@@ -43,8 +43,9 @@ digraph officerPositions {
 		sysadmin [label = <<b>Systems<br/>Administrator</b><br/>Nathan Ringo>];
 		webmaster [label = "Michael Zhang"];
 		louis [label = "Louis Goessling"];
+		abner [label = "Abner Hoslinger"];
 
-		sysadmin -> webmaster, louis;
+		sysadmin -> abner, ace, webmaster, louis;
 
 		color = lightgrey;
 		label = "Systems Committee";
