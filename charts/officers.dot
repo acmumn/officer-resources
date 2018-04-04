@@ -43,7 +43,7 @@ digraph officerPositions {
 		sysadmin [label = <<b>Systems<br/>Administrator</b><br/>Nathan Ringo>];
 		abner [label = "Abner Hoslinger"];
 
-		sysadmin -> abner;
+		sysadmin -> abner, louis, webmaster;
 
 		color = lightgrey;
 		label = "Systems Committee";
@@ -53,7 +53,7 @@ digraph officerPositions {
 			webmaster [label = "Michael Zhang"];
 			louis [label = "Louis Goessling"];
 
-			sysadmin -> webmaster, louis;
+			louis -> adam, logan;
 
 			color = grey;
 			label = "Website Redesign\nSubcommittee";
@@ -61,8 +61,7 @@ digraph officerPositions {
 
 			subgraph cluster_website_style {
 				adam[label = "Adam Wallace"];
-
-				louis -> adam;
+				logan[label = "Logan Wendt"];
 
 				color = "#7f7f7f";
 				label = "Website Styling\nSubsubcommittee";
