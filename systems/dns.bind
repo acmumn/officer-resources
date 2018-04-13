@@ -1,8 +1,9 @@
+; Note that (for now, at least), this file is normative only.
 $ORIGIN acm.umn.edu.
 
-acm.umn.edu.    IN    SOA      ns-auth-1.umn.edu. acm.umn.edu. (20170504 86400 43200 86400 3600)
+acm.umn.edu.    IN    SOA      ns-auth-1.umn.edu. acm.umn.edu. (20180413 86400 43200 86400 3600)
 
-beholder        IN    A        160.94.179.129
+hestia          IN    A        160.94.179.129
 
 ; ACM "logical"
 @               IN    A        160.94.179.130
@@ -11,6 +12,9 @@ snacks          IN    A        160.94.179.131
 minnehack       IN    A        160.94.179.132
 files           IN    A        160.94.179.133
 games           IN    A        160.94.179.134
+
+; WOPR (Ask wheel before touching this)
+wopr            IN    A        160.94.179.147
 
 ; ACM "physical"
 argo            IN    A        160.94.179.148
@@ -27,5 +31,6 @@ vm6             IN    A        160.94.179.170
 vm7             IN    A        160.94.179.171
 
 ; Member Machines
-josh            IN    A        160.94.179.189
-nbox            IN    A        160.94.179.190
+louis.members   IN    A        160.94.179.187
+nbox.members    IN    A        160.94.179.188
+josh.members    IN    A        160.94.179.189
