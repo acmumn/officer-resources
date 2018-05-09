@@ -1,12 +1,13 @@
 digraph officerPositions {
 	node[shape = "box"];
-	president [label = <<b>President</b><br/>Ari Bible>];
+	graph[overlap = false, spline=true]
 
-	// Ari lording their power over us.
+	president [label = <<b>President</b><br/>Isai Ortiz>];
+
 	president -> vicePresident, treasurer, sysadmin, communityAmbassador;
 
 	subgraph cluster_financial {
-		treasurer [label = <<b>Treasurer</b><br/><br/>Helen Larson>];
+		treasurer [label = <<b>Treasurer</b><br/>Thomas Tang>];
 		ace [label = "Ace Oubaha"];
 
 		treasurer -> ace;
@@ -17,11 +18,11 @@ digraph officerPositions {
 	}
 
 	subgraph cluster_administrative {
-		vicePresident [label = <<b>Vice President</b><br/><br/>Alison Gould>];
-		secretary [label = "Noah Wrolson"];
-		mike [label = "Mike McPherson"];
+		vicePresident [label = <<b>Vice President</b><br/>Helen Larson>];
+		secretary [label = <<b>Secretary</b><br/>Mike McPherson>];
+		alison [label = <<b>Project Manager</b><br/>Alison Gould>]; //Scrum Mistress
 
-		vicePresident -> secretary, ace, mike;
+		vicePresident -> secretary, ace, alison;
 
 		color = lightgrey;
 		label = "Administrative Committee";
@@ -29,8 +30,8 @@ digraph officerPositions {
 	}
 
 	subgraph cluster_public_relations {
-		communityAmbassador [label = <<b>Community<br/>Ambassador</b><br/>Isai Ortiz>];
-		membership [label = "Josh Folkerds"];
+		communityAmbassador [label = <<b>Community<br/>Ambassador</b><br/>Jack Stanek>];
+		membership [label = <<b>Membership</b><br/>Cassie Bleskachek>];
 
 		communityAmbassador -> ace, membership;
 
@@ -40,33 +41,36 @@ digraph officerPositions {
 	}
 
 	subgraph cluster_systems {
-		sysadmin [label = <<b>Systems<br/>Administrator</b><br/>Nathan Ringo>];
-		abner [label = "Abner Hoslinger"];
+		sysadmin [label = <<b>Systems<br/>Administrator</b><br/>Louis Goessling>];
+		
 
-		sysadmin -> abner, louis, webmaster;
+		sysadmin -> unix_class_tsar, webmaster;
 
 		color = lightgrey;
 		label = "Systems Committee";
 		style = filled;
 
 		subgraph cluster_website {
-			webmaster [label = "Michael Zhang"];
-			louis [label = "Louis Goessling"];
+			webmaster [label = <<b>Webmaster</b><br/>Michael Zhang>];
 
-			louis -> adam, logan;
-
-			color = grey;
-			label = "Website Redesign\nSubcommittee";
+			color = "#a0a0a0";
+			label = "Website\nSubcomittee";
 			style = filled;
-
-			subgraph cluster_website_style {
-				adam[label = "Adam Wallace"];
-				logan[label = "Logan Wendt"];
-
-				color = "#7f7f7f";
-				label = "Website Styling\nSubsubcommittee";
-				style = filled;
-			}
 		}
+
+		subgraph cluster_unix_classes {
+			unix_class_tsar [label = <<b>Unix Class Tsar</b><br/>Nathan Ringo>];
+
+			abner [label = "Abner Hoslinger"];
+
+			unix_class_tsar -> abner;
+
+			color = "#a0a0a0";
+			label = "Unix Classes\nSubcomittee";
+			style = filled;
+		}
+
+		unix_class_tsar -> webmaster;
+		unix_class_tsar -> sysadmin [arrowsize = 0.5];
 	}
 }
